@@ -3,6 +3,8 @@
 import React from "react";
 import { UserGroupIcon, SunIcon } from "@heroicons/react/24/outline";
 import LinkedIn from "../../components/Svg/LinkedIn.js";
+import Github from "@/components/Svg/Github.js";
+import XIcon from "@/components/Svg/X.js";
 
 const Home = () => {
   return (
@@ -17,7 +19,9 @@ const Home = () => {
         <ul>
           <UserGroupIcon className="w-6 h-6" />
           <SunIcon className="w-6 h-6" />
-          <LinkedIn className="" />
+          <LinkedIn />
+          <XIcon />
+          <Github />
         </ul>
       </header>
 
