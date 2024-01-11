@@ -1,10 +1,10 @@
 // Home.js
 
 import React from "react";
-import { UserGroupIcon, SunIcon } from "@heroicons/react/24/outline";
 import LinkedIn from "../../components/Svg/LinkedIn.js";
 import Github from "@/components/Svg/Github.js";
 import XIcon from "@/components/Svg/X.js";
+import Sun from "@/components/Svg/Sun.js";
 
 const Home = () => {
   return (
@@ -16,12 +16,12 @@ const Home = () => {
           <li>Contato</li>
           <li>More</li>
         </ul>
-        <ul>
-          <UserGroupIcon className="w-6 h-6" />
-          <SunIcon className="w-6 h-6" />
+        <ul className="flex gap-4">
           <LinkedIn />
           <XIcon />
           <Github />
+          <span className="" >|</span>
+          <Sun />
         </ul>
       </header>
 
