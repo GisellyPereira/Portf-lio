@@ -1,33 +1,29 @@
-// Home.js
-
 import React from "react";
-import LinkedIn from "../../components/Svg/LinkedIn.js";
-import Github from "@/components/Svg/Github.js";
-import XIcon from "@/components/Svg/X.js";
-import Sun from "@/components/Svg/Sun.js";
+import Footer from "../../components/Footer/Footer.js";
+import Header from "@/components/Header/Header.js";
 
 const Home = () => {
   return (
-    <div className="font-sans flex flex-col min-h-screen">
-      <header className="header flex justify-between">
-        <ul className="flex gap-10">
-          <li>Sobre</li>
-          <li>Projetos</li>
-          <li>Contato</li>
-          <li>More</li>
-        </ul>
-        <ul className="flex gap-4">
-          <LinkedIn />
-          <XIcon />
-          <Github />
-          <span className="" >|</span>
-          <Sun />
-        </ul>
-      </header>
+    <div className="font-sans flex flex-col min-h-screen bg-primary-head-black text-primary-head-white">
+      <div className="header">
+        <div className="max-w-[70vw] mx-auto">
+          <Header />
+          <div className="mt-20">
+            <h1 className="text-primary-head-darkGray font-bold text-5xl mb-10 tracking-wide">
+              Eu sou a <span className="text-primary-head-white">Giselly Pereira</span>
+            </h1>
+            <h2 className="text-primary-head-darkGray max-w-[30vw] mb-4 text-xl leading-loose tracking-wide">
+              Sou uma entusiasta apaixonada pela criação visual e funcional de
+              interfaces, especializada no desenvolvimento front-end para
+              plataformas web e mobile. Ao longo da minha jornada profissional,
+              tenho dedicado minha energia e habilidades para transformar
+              conceitos criativos em experiências digitais envolventes.
+            </h2>
+          </div>
+        </div>
+      </div>
 
-      <footer className="text-center py-4 mt-auto">
-        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
-      </footer>
+      <Footer />
     </div>
   );
 };
