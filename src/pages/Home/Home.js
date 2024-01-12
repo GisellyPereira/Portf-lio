@@ -19,6 +19,9 @@ const Home = () => {
               tenho dedicado minha energia e habilidades para transformar
               conceitos criativos em experiências digitais envolventes.
             </h2>
+            <div>
+              <button className="btn-primary ">CV </button>
+            </div>
           </div>
         </div>
       </div>

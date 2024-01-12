@@ -20,6 +20,7 @@ module.exports = {
             lightRed: "rgba(233, 63, 64, 0.43)",
             lightYellow: "rgba(255, 184, 0, 0.43)",
             darkBorder: "#383737",
+            gradient: `linear-gradient(to right, #1A1A1A, #131313)`,
           },
         },
         shades: {
@@ -28,7 +29,7 @@ module.exports = {
             whiteMinus25: "rgba(255, 255, 255, 0.25)",
             whiteMinus50: "rgba(255, 255, 255, 0.5)",
             whiteMinus70: "rgba(255, 255, 255, 0.7)",
-            blackbg:"rgba(21, 21, 21, 0.5)",
+            blackbg: "rgba(21, 21, 21, 0.5)",
           },
         },
       },
