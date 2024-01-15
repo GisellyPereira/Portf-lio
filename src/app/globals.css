@@ -18,19 +18,28 @@ body {
   }
 
   h1 {
-    @apply font-semibold text-3xl tracking-tighter;
+    @apply font-semibold text-4xl tracking-tighter;
+    letter-spacing: 0.02em;
   }
 
   h2 {
-    @apply font-medium text-2xl tracking-tighter;
+    @apply font-medium text-3xl tracking-tighter;
+    letter-spacing: 0.02em;
   }
 
   h3 {
-    @apply font-thin text-[20px] tracking-tighter;
+    @apply font-thin text-[30px] tracking-tighter;
+    letter-spacing: 0.02em;
   }
 
   h4 {
     @apply font-thin text-xl tracking-tighter;
+    letter-spacing: 0.02em;
+  }
+
+  p{
+    @apply text-[18px] tracking-tighter ;
+    letter-spacing: 0.1em;
   }
 }
 
