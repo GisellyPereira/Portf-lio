@@ -15,7 +15,7 @@ module.exports = {
             onyx: "#181818",
             darkGray: "#808080",
             mediumGray: "rgba(128, 128, 128, 0.5)",
-            lightGray: "#C5C5C5",
+            lightGray: "#A0A0A0",
             lightBlue: "rgba(63, 100, 234, 0.43)",
             lightRed: "rgba(233, 63, 64, 0.43)",
             lightYellow: "rgba(255, 184, 0, 0.43)",

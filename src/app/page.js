@@ -1,9 +1,11 @@
-import Home from "../pages/Home/Home.js"
+"use client";
+import React from "react";
+import Routes from "../routes/routes.js";
 
 export default function Page() {
   return (
-    <div>
-       <Home />
-    </div>
+    <React.StrictMode>
+      <Routes />
+    </React.StrictMode>
   );
 }
