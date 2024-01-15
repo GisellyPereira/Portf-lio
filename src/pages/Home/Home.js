@@ -5,14 +5,30 @@ import LinkedInIcon from "@/components/Svg/LinkedIn/LinkedIn.js";
 import Github from "@/components/Svg/Github/Github.js";
 import Instagram from "@/components/Svg/Instagram/Instagram.js";
 import X from "@/components/Svg/X/X.js";
+import Arrow from "@/components/Svg/Arrow/Arrow.js";
 
 const Home = () => {
-
   const socialMediaLinks = [
-    { url: "https://www.linkedin.com/in/giselly-pereira/", icon: <LinkedInIcon />, text: "LinkedIn" },
-    { url: "https://github.com/GisellyPereira", icon: <Github/>, text: "Github" },
-    { url: "https://www.instagram.com/giselly.ap_/", icon: <Instagram />, text: "Instagram" },
-    { url: "https://twitter.com/i/flow/login?redirect_after_login=%2Fgisellyy_ap", icon: <X />, text: "X (Twitter)" },
+    {
+      url: "https://www.linkedin.com/in/giselly-pereira/",
+      icon: <LinkedInIcon />,
+      text: "LinkedIn",
+    },
+    {
+      url: "https://github.com/GisellyPereira",
+      icon: <Github />,
+      text: "Github",
+    },
+    {
+      url: "https://www.instagram.com/giselly.ap_/",
+      icon: <Instagram />,
+      text: "Instagram",
+    },
+    {
+      url: "https://twitter.com/i/flow/login?redirect_after_login=%2Fgisellyy_ap",
+      icon: <X />,
+      text: "X (Twitter)",
+    },
   ];
 
   const renderSocialLinks = () => {
@@ -30,26 +46,30 @@ const Home = () => {
     ));
   };
 
-
   return (
     <div className="font-sans mx-auto w-3/4">
       <header className="pt-10">
         <nav className="flex space-x-6">
           <Link to="/"> Home </Link>
-          <Link to="/about"> Projetos </Link>
+          <Link to="/projects"> Projetos </Link>
           <Link to="/product"> Experiências </Link>
           <Link to="/product"> Blog </Link>
         </nav>
       </header>
       <div className="mt-20">
         <h1 className="mb-2">Olá, meu nome é Giselly 👋 . </h1>
-        <h2 className="text-primary-head-lightGray">Desenvolvedora Front-End.</h2>
+        <h2 className="text-primary-head-lightGray">
+          Desenvolvedora Front-End.
+        </h2>
         <div className="flex gap-4 mt-5">{renderSocialLinks()}</div>
         <div className="mt-10 w-3/5">
           <p>
             Sou uma desenvolvedora front-end com três anos de experiência,
             focada em criar interfaces intuitivas para web e mobile. Já{" "}
-            <Link to="/" className="ml-1 underline text-primary-head-lightGray font-semibold">
+            <Link
+              to="/"
+              className="ml-1 underline text-primary-head-lightGray font-semibold"
+            >
               trabalhei
             </Link>{" "}
             em diversos projetos e estou cursando Análise e Desenvolvimento de
@@ -122,7 +142,37 @@ const Home = () => {
         </div>
 
         <div className="mt-10 ">
-          <h3 className="font-semibold">📌 Posts recentes</h3>
+          <h3 className="font-semibold mb-6">📌 Posts recentes</h3>
+          <div className="flex gap-10 mb-3">
+            <div className="flex bg-primary-head-onyx rounded border border-primary-head-mediumGray px-5 py-5 ">
+              <div>
+                <h4 className="font-semibold">Minha história</h4>
+                <p className="text-primary-head-lightGray">
+                  Como vim parar aqui!
+                </p>
+              </div>
+              <div className="flex-grow"></div>
+              <div className="ml-28">
+                <Arrow />
+              </div>
+            </div>
+
+            <div className="flex bg-primary-head-onyx rounded border border-primary-head-mediumGray px-5 py-5 ">
+              <div>
+                <h4 className="font-semibold">Minha história</h4>
+                <p className="text-primary-head-lightGray">
+                  Como vim parar aqui!
+                </p>
+              </div>
+              <div className="flex-grow"></div>
+              <div className="ml-28">
+                <Arrow />
+              </div>
+            </div>
+          </div>
+          <Link to="history" className="underline">
+            Ver mais
+          </Link>
         </div>
       </div>
       <Footer />

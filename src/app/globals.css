@@ -10,6 +10,7 @@ importação da font
 body {
   background-color: #000;
   color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 @layer base {
@@ -18,28 +19,29 @@ body {
   }
 
   h1 {
-    @apply font-semibold text-4xl tracking-tighter;
+    @apply font-semibold text-3xl tracking-tighter;
     letter-spacing: 0.02em;
   }
 
   h2 {
-    @apply font-medium text-3xl tracking-tighter;
+    @apply font-medium text-2xl tracking-tighter;
     letter-spacing: 0.02em;
   }
 
   h3 {
-    @apply font-thin text-[30px] tracking-tighter;
+    @apply font-thin text-[22px] tracking-tighter;
     letter-spacing: 0.02em;
   }
 
   h4 {
-    @apply font-thin text-xl tracking-tighter;
+    @apply font-thin text-[18px] tracking-tighter;
     letter-spacing: 0.02em;
   }
 
   p{
-    @apply text-[18px] tracking-tighter ;
+    @apply text-[15px] tracking-tighter ;
     letter-spacing: 0.1em;
+    line-height: 2;
   }
 }
 

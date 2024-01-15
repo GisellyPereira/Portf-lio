@@ -1,11 +1,12 @@
 import React from "react";
 
-const Projects = () => {
+
+const Journey = () => {
   return (
     <div>
-      <p>oi</p>
+     
     </div>
   );
 };
 
-export default Projects;
+export default Journey;

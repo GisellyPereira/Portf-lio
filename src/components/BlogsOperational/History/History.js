@@ -1,11 +1,12 @@
 import React from "react";
 
-const Projects = () => {
+
+const History = () => {
   return (
     <div>
-      <p>oi</p>
+     
     </div>
   );
 };
 
-export default Projects;
+export default History;
