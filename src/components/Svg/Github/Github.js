@@ -3,8 +3,8 @@ import React from "react";
 const Github = () => {
   return (
     <svg
-      width="2500"
-      height="2432"
+      width="20"
+      height="20"
       viewBox="0 0 256 249"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"

@@ -12,7 +12,7 @@ module.exports = {
           head: {
             black: "#0D0D0D",
             white: "#FFFFFF",
-            onyx: "#181818",
+            onyx: "#2c2c2cDD",
             darkGray: "#808080",
             mediumGray: "rgba(128, 128, 128, 0.5)",
             lightGray: "#A0A0A0",

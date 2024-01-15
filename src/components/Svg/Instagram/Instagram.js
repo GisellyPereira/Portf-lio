@@ -4,8 +4,8 @@ const Instagram = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2500"
-      height="2500"
+      width="20"
+      height="20"
       viewBox="0 0 2499.899999999999 2500"
     >
       <defs>

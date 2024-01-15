@@ -4,8 +4,8 @@ const X = () => {
   return (
     <svg
       fill="none"
-      height="2260"
-      width="2500"
+      height="20"
+      width="20"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0.254 0.25 500 451.95400000000006"
     >
