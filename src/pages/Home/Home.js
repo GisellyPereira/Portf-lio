@@ -56,6 +56,23 @@ const Home = () => {
             <span className="text-white ">X (Twitter)</span>
           </a>
         </div>
+        <div className="mt-10 w-3/5">
+          <p>
+            Sou uma desenvolvedora front-end com três anos de experiência,
+            focada em criar interfaces intuitivas para web e mobile. Já
+            <a
+              href="/"
+              className="ml-1 underline text-primary-head-lightGray font-semibold"
+            >
+              trabalhei
+            </a>{" "}
+            em diversos projetos e estou cursando Análise e Desenvolvimento de
+            Sistemas para aprimorar minhas habilidades no desenvolvimento
+            front-end.
+          </p>
+
+          <p className="mt-10">Minhas principais stacks são </p>
+        </div>
       </div>
       <Footer />
     </div>
