@@ -1,11 +1,14 @@
 import React from "react";
-import Footer from "../../components/Footer/Footer.js";
+import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
-import LinkedInIcon from "@/components/Svg/LinkedIn/LinkedIn.js";
-import Github from "@/components/Svg/Github/Github.js";
-import Instagram from "@/components/Svg/Instagram/Instagram.js";
-import X from "@/components/Svg/X/X.js";
-import Arrow from "@/components/Svg/Arrow/Arrow.js";
+import LinkedInIcon from "@/components/Svg/LinkedIn/LinkedIn";
+import Github from "@/components/Svg/Github/Github";
+import Instagram from "@/components/Svg/Instagram/Instagram";
+import X from "@/components/Svg/X/X";
+import SocialLink from "../../components/SocialLink/SocialLink";
+import ContentBlock from "../../components/ContentBlock/ContentBlock";
+import ProjectBlock from "../../components/ProjectBlock/ProjectBlock";
+import NavigationLink from "../../components/NavigationLink/NavigationLink";
 
 const Home = () => {
   const socialMediaLinks = [
@@ -27,22 +30,13 @@ const Home = () => {
     {
       url: "https://twitter.com/i/flow/login?redirect_after_login=%2Fgisellyy_ap",
       icon: <X />,
-      text: "X (Twitter)",
+      text: "Twitter",
     },
   ];
 
   const renderSocialLinks = () => {
     return socialMediaLinks.map((link, index) => (
-      <a
-        key={index}
-        href={link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center bg-primary-head-onyx px-2 py-1 rounded border border-primary-head-mediumGray gap-2"
-      >
-        {link.icon}
-        <span className="text-white">{link.text}</span>
-      </a>
+      <SocialLink key={index} {...link} />
     ));
   };
 
@@ -50,10 +44,10 @@ const Home = () => {
     <div className="font-sans mx-auto w-3/4">
       <header className="pt-10">
         <nav className="flex space-x-6">
-          <Link to="/"> Home </Link>
-          <Link to="/projects"> Projetos </Link>
-          <Link to="/product"> Experiências </Link>
-          <Link to="/product"> Blog </Link>
+          <NavigationLink to="/">Home</NavigationLink>
+          <NavigationLink to="/projects">Projetos</NavigationLink>
+          <NavigationLink to="/experiences">Experiências</NavigationLink>
+          <NavigationLink to="/blog">Blog</NavigationLink>
         </nav>
       </header>
       <div className="mt-20">
@@ -66,17 +60,14 @@ const Home = () => {
           <p>
             Sou uma desenvolvedora front-end com três anos de experiência,
             focada em criar interfaces intuitivas para web e mobile. Já{" "}
-            <Link
-              to="/"
-              className="ml-1 underline text-primary-head-lightGray font-semibold"
-            >
+            <NavigationLink to="/experiences" className="ml-1">
               trabalhei
-            </Link>{" "}
+            </NavigationLink>{" "}
             em diversos projetos e estou cursando Análise e Desenvolvimento de
             Sistemas para aprimorar minhas habilidades no desenvolvimento
             front-end.
           </p>
-          <p className="mt-10">Minhas principais stacks são: </p>
+          <p className="mt-10">Minhas principais stacks são:</p>
           <div className="flex flex-wrap mt-2 gap-1">
             <img
               src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
@@ -130,47 +121,49 @@ const Home = () => {
             />
             <img
               src="https://img.shields.io/badge/bootstrap-4B0082?style=for-the-badge&logo=bootstrap&logoColor=white"
-              alt="Boootstrap"
+              alt="Bootstrap"
               className="h-auto"
             />
             <img
               src="https://img.shields.io/badge/tailwind-%2367C5CC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
-              alt="Tailwind"
+              alt="Tailwind CSS"
               className="h-auto"
             />
           </div>
         </div>
 
-        <div className="mt-10 ">
+        <div className="mt-10">
           <h3 className="font-semibold mb-6">📌 Posts recentes</h3>
           <div className="flex gap-10 mb-3">
-            <div className="flex bg-primary-head-onyx rounded border border-primary-head-mediumGray px-5 py-5 ">
-              <div>
-                <h4 className="font-semibold">Minha história</h4>
-                <p className="text-primary-head-lightGray">
-                  Como vim parar aqui!
-                </p>
-              </div>
-              <div className="flex-grow"></div>
-              <div className="ml-28">
-                <Arrow />
-              </div>
-            </div>
-
-            <div className="flex bg-primary-head-onyx rounded border border-primary-head-mediumGray px-5 py-5 ">
-              <div>
-                <h4 className="font-semibold">Minha história</h4>
-                <p className="text-primary-head-lightGray">
-                  Como vim parar aqui!
-                </p>
-              </div>
-              <div className="flex-grow"></div>
-              <div className="ml-28">
-                <Arrow />
-              </div>
-            </div>
+            <ContentBlock
+              title="Minha história"
+              description="Como vim parar aqui!"
+            />
+            <ContentBlock
+              title="Minha história"
+              description="Como vim parar aqui!"
+            />
           </div>
-          <Link to="history" className="underline">
+          <Link to="/history" className="underline">
+            Ver mais
+          </Link>
+        </div>
+
+        <div className="mt-10">
+          <h3 className="font-semibold mb-6">💼 Alguns dos meus projetos</h3>
+          <div className="flex gap-10 mb-3">
+            <ProjectBlock
+              title="Animais Fantásticos"
+              description="Projeto pessoal em JS."
+              url="https://github.com/GisellyPereira/animais-fantasticos"
+            />
+            <ProjectBlock
+              title="Projeto X"
+              description="Descrição do Projeto X."
+              url="https://github.com/GisellyPereira/projeto-x"
+            />
+          </div>
+          <Link to="/projects" className="underline">
             Ver mais
           </Link>
         </div>
