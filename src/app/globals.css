@@ -4,26 +4,42 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --header-background-start-rgb: 214, 219, 220;
+  --header-background-end-rgb: 255, 255, 255;
+  --footer-background-start-rgb: 214, 219, 220;
+  --footer-background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --header-background-start-rgb: 0, 0, 0;
+    --header-background-end-rgb: 0, 0, 0;
+    --footer-background-start-rgb: 0, 0, 0;
+    --footer-background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    transparent,
+    rgb(var(--footer-background-end-rgb))
+  ) rgb(var(--footer-background-start-rgb));
 }
 
+.header {
+  height: 50vh;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--header-background-end-rgb))
+    )
+    rgb(var(--header-background-start-rgb));
+  /* Adiciona a imagem de background para o header */
+  background-image: url('../../public/Type=HeaderGradient.png');
+  background-size: cover;
+  background-position: center;
+}
 

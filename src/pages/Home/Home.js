@@ -7,7 +7,7 @@ import LinkedIn from "../../components/Svg/LinkedIn.js";
 const Home = () => {
   return (
     <div className="font-sans flex flex-col min-h-screen">
-      <header className="flex justify-between">
+      <header className="header flex justify-between">
         <ul className="flex gap-10">
           <li>Sobre</li>
           <li>Projetos</li>
